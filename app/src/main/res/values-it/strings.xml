@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Farmaco all’Ora Giusta</string>
+    <string name="no_medications_title">Tutto a posto per ora</string>
+    <string name="no_medications_body">Nessun farmaco è programmato per oggi.</string>
+    <string name="add_medication">Aggiungi farmaco</string>
+    <string name="nav_today">Oggi</string>
+    <string name="nav_settings">Impostazioni</string>
+    <string name="language_title">Lingua</string>
+    <string name="language_subtitle">Scegli la lingua dell’app</string>
+    <string name="language_system">Lingua di sistema</string>
+    <string name="select_language">Seleziona lingua</string>
+    <string name="close">Chiudi</string>
+    <string name="medical_disclaimer">Segui sempre le indicazioni del professionista sanitario. L’app non modifica la prescrizione.</string>
+</resources>
+

@@ -1,0 +1,33 @@
+# Android / Gradle
+.gradle/
+build/
+**/build/
+local.properties
+*.apk
+*.aab
+*.ap_
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing and secrets
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Private user data and imported medical files
+private-data/
+patient-data/
+*.db
+*.db-shm
+*.db-wal
+

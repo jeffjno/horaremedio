@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">İlaç Zamanı</string>
+    <string name="no_medications_title">Şimdilik her şey tamam</string>
+    <string name="no_medications_body">Bugün için planlanmış ilaç yok.</string>
+    <string name="add_medication">İlaç ekle</string>
+    <string name="nav_today">Bugün</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="language_title">Dil</string>
+    <string name="language_subtitle">Uygulama dilini seçin</string>
+    <string name="language_system">Sistem dili</string>
+    <string name="select_language">Dil seçin</string>
+    <string name="close">Kapat</string>
+    <string name="medical_disclaimer">Her zaman sağlık uzmanınızın talimatlarına uyun. Uygulama reçetenizi değiştirmez.</string>
+</resources>
+

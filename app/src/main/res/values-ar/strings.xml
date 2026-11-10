@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الدواء في موعده</string>
+    <string name="no_medications_title">كل شيء مكتمل حتى الآن</string>
+    <string name="no_medications_body">لا توجد أدوية مجدولة لهذا اليوم.</string>
+    <string name="add_medication">إضافة دواء</string>
+    <string name="nav_today">اليوم</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="language_title">اللغة</string>
+    <string name="language_subtitle">اختر لغة التطبيق</string>
+    <string name="language_system">لغة النظام</string>
+    <string name="select_language">اختيار اللغة</string>
+    <string name="close">إغلاق</string>
+    <string name="medical_disclaimer">اتبع دائمًا إرشادات أخصائي الرعاية الصحية. لا يغيّر التطبيق وصفتك الطبية.</string>
+</resources>
+

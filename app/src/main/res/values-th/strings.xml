@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ยาตรงเวลา</string>
+    <string name="no_medications_title">ตอนนี้เรียบร้อยทั้งหมดแล้ว</string>
+    <string name="no_medications_body">วันนี้ไม่มียาที่กำหนดไว้</string>
+    <string name="add_medication">เพิ่มยา</string>
+    <string name="nav_today">วันนี้</string>
+    <string name="nav_settings">การตั้งค่า</string>
+    <string name="language_title">ภาษา</string>
+    <string name="language_subtitle">เลือกภาษาที่ใช้ในแอป</string>
+    <string name="language_system">ภาษาของระบบ</string>
+    <string name="select_language">เลือกภาษา</string>
+    <string name="close">ปิด</string>
+    <string name="medical_disclaimer">ปฏิบัติตามคำแนะนำของบุคลากรทางการแพทย์เสมอ แอปจะไม่เปลี่ยนแปลงใบสั่งยาของคุณ</string>
+</resources>
+

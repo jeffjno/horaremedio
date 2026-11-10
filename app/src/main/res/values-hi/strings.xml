@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">सही समय पर दवा</string>
+    <string name="no_medications_title">अभी सब पूरा है</string>
+    <string name="no_medications_body">आज के लिए कोई दवा निर्धारित नहीं है।</string>
+    <string name="add_medication">दवा जोड़ें</string>
+    <string name="nav_today">आज</string>
+    <string name="nav_settings">सेटिंग</string>
+    <string name="language_title">भाषा</string>
+    <string name="language_subtitle">ऐप की भाषा चुनें</string>
+    <string name="language_system">सिस्टम की भाषा</string>
+    <string name="select_language">भाषा चुनें</string>
+    <string name="close">बंद करें</string>
+    <string name="medical_disclaimer">हमेशा स्वास्थ्य पेशेवर की सलाह का पालन करें। ऐप आपके नुस्खे को नहीं बदलता।</string>
+</resources>
+

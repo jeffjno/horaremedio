@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ліки вчасно</string>
+    <string name="no_medications_title">Наразі все виконано</string>
+    <string name="no_medications_body">На сьогодні ліків не заплановано.</string>
+    <string name="add_medication">Додати ліки</string>
+    <string name="nav_today">Сьогодні</string>
+    <string name="nav_settings">Налаштування</string>
+    <string name="language_title">Мова</string>
+    <string name="language_subtitle">Виберіть мову застосунку</string>
+    <string name="language_system">Мова системи</string>
+    <string name="select_language">Вибрати мову</string>
+    <string name="close">Закрити</string>
+    <string name="medical_disclaimer">Завжди дотримуйтеся рекомендацій медичного фахівця. Застосунок не змінює призначення.</string>
+</resources>
+

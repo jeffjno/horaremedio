@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Medicine On Time</string>
+    <string name="no_medications_title">All clear for now</string>
+    <string name="no_medications_body">No medicine is scheduled for today.</string>
+    <string name="add_medication">Add medicine</string>
+    <string name="nav_today">Today</string>
+    <string name="nav_settings">Settings</string>
+    <string name="language_title">Language</string>
+    <string name="language_subtitle">Choose the language used in the app</string>
+    <string name="language_system">System language</string>
+    <string name="select_language">Select language</string>
+    <string name="close">Close</string>
+    <string name="medical_disclaimer">Always follow your healthcare professional’s advice. The app does not change your prescription.</string>
+</resources>
+

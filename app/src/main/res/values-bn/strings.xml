@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">সঠিক সময়ে ওষুধ</string>
+    <string name="no_medications_title">আপাতত সব সম্পন্ন</string>
+    <string name="no_medications_body">আজকের জন্য কোনো ওষুধ নির্ধারিত নেই।</string>
+    <string name="add_medication">ওষুধ যোগ করুন</string>
+    <string name="nav_today">আজ</string>
+    <string name="nav_settings">সেটিংস</string>
+    <string name="language_title">ভাষা</string>
+    <string name="language_subtitle">অ্যাপের ভাষা বেছে নিন</string>
+    <string name="language_system">সিস্টেমের ভাষা</string>
+    <string name="select_language">ভাষা নির্বাচন করুন</string>
+    <string name="close">বন্ধ করুন</string>
+    <string name="medical_disclaimer">সবসময় স্বাস্থ্যসেবা পেশাজীবীর পরামর্শ মেনে চলুন। অ্যাপ আপনার ব্যবস্থাপত্র পরিবর্তন করে না।</string>
+</resources>
+

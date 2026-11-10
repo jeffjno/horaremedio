@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Medicijn op Tijd</string>
+    <string name="no_medications_title">Voorlopig alles in orde</string>
+    <string name="no_medications_body">Er staan vandaag geen medicijnen gepland.</string>
+    <string name="add_medication">Medicijn toevoegen</string>
+    <string name="nav_today">Vandaag</string>
+    <string name="nav_settings">Instellingen</string>
+    <string name="language_title">Taal</string>
+    <string name="language_subtitle">Kies de taal van de app</string>
+    <string name="language_system">Systeemtaal</string>
+    <string name="select_language">Taal selecteren</string>
+    <string name="close">Sluiten</string>
+    <string name="medical_disclaimer">Volg altijd het advies van uw zorgverlener. De app wijzigt uw voorschrift niet.</string>
+</resources>
+

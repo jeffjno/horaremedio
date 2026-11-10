@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Remédio Hora Certa</string>
+    <string name="no_medications_title">Tudo certo por enquanto</string>
+    <string name="no_medications_body">Nenhum medicamento foi programado para hoje.</string>
+    <string name="add_medication">Adicionar medicamento</string>
+    <string name="nav_today">Hoje</string>
+    <string name="nav_settings">Configurações</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_subtitle">Escolha o idioma usado no aplicativo</string>
+    <string name="language_system">Idioma do sistema</string>
+    <string name="select_language">Selecionar idioma</string>
+    <string name="close">Fechar</string>
+    <string name="medical_disclaimer">Siga sempre a orientação do profissional de saúde. O aplicativo não altera sua prescrição.</string>
+</resources>
+

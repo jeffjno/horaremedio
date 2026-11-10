@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lek na Czas</string>
+    <string name="no_medications_title">Na razie wszystko w porządku</string>
+    <string name="no_medications_body">Na dziś nie zaplanowano żadnych leków.</string>
+    <string name="add_medication">Dodaj lek</string>
+    <string name="nav_today">Dzisiaj</string>
+    <string name="nav_settings">Ustawienia</string>
+    <string name="language_title">Język</string>
+    <string name="language_subtitle">Wybierz język aplikacji</string>
+    <string name="language_system">Język systemu</string>
+    <string name="select_language">Wybierz język</string>
+    <string name="close">Zamknij</string>
+    <string name="medical_disclaimer">Zawsze postępuj zgodnie z zaleceniami personelu medycznego. Aplikacja nie zmienia recepty.</string>
+</resources>
+

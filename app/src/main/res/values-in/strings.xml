@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Obat Tepat Waktu</string>
+    <string name="no_medications_title">Semua selesai untuk saat ini</string>
+    <string name="no_medications_body">Tidak ada obat yang dijadwalkan hari ini.</string>
+    <string name="add_medication">Tambah obat</string>
+    <string name="nav_today">Hari ini</string>
+    <string name="nav_settings">Setelan</string>
+    <string name="language_title">Bahasa</string>
+    <string name="language_subtitle">Pilih bahasa yang digunakan di aplikasi</string>
+    <string name="language_system">Bahasa sistem</string>
+    <string name="select_language">Pilih bahasa</string>
+    <string name="close">Tutup</string>
+    <string name="medical_disclaimer">Selalu ikuti arahan tenaga kesehatan. Aplikasi tidak mengubah resep Anda.</string>
+</resources>

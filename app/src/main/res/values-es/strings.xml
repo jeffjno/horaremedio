@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Medicamento a Tiempo</string>
+    <string name="no_medications_title">Todo en orden por ahora</string>
+    <string name="no_medications_body">No hay medicamentos programados para hoy.</string>
+    <string name="add_medication">Añadir medicamento</string>
+    <string name="nav_today">Hoy</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_subtitle">Elige el idioma de la aplicación</string>
+    <string name="language_system">Idioma del sistema</string>
+    <string name="select_language">Seleccionar idioma</string>
+    <string name="close">Cerrar</string>
+    <string name="medical_disclaimer">Sigue siempre las indicaciones del profesional de salud. La aplicación no modifica tu receta.</string>
+</resources>
+

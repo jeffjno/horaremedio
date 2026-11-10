@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Medikament zur richtigen Zeit</string>
+    <string name="no_medications_title">Vorerst alles erledigt</string>
+    <string name="no_medications_body">Für heute sind keine Medikamente geplant.</string>
+    <string name="add_medication">Medikament hinzufügen</string>
+    <string name="nav_today">Heute</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="language_title">Sprache</string>
+    <string name="language_subtitle">Sprache der App auswählen</string>
+    <string name="language_system">Systemsprache</string>
+    <string name="select_language">Sprache auswählen</string>
+    <string name="close">Schließen</string>
+    <string name="medical_disclaimer">Befolgen Sie immer die Anweisungen Ihrer medizinischen Fachkraft. Die App ändert Ihre Verordnung nicht.</string>
+</resources>
+

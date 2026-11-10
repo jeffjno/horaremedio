@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лекарство вовремя</string>
+    <string name="no_medications_title">Пока всё выполнено</string>
+    <string name="no_medications_body">На сегодня лекарства не запланированы.</string>
+    <string name="add_medication">Добавить лекарство</string>
+    <string name="nav_today">Сегодня</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="language_title">Язык</string>
+    <string name="language_subtitle">Выберите язык приложения</string>
+    <string name="language_system">Язык системы</string>
+    <string name="select_language">Выбрать язык</string>
+    <string name="close">Закрыть</string>
+    <string name="medical_disclaimer">Всегда следуйте рекомендациям медицинского специалиста. Приложение не меняет назначение.</string>
+</resources>
+

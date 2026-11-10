@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">お薬の時間</string>
+    <string name="no_medications_title">今のところすべて完了です</string>
+    <string name="no_medications_body">今日予定されている薬はありません。</string>
+    <string name="add_medication">薬を追加</string>
+    <string name="nav_today">今日</string>
+    <string name="nav_settings">設定</string>
+    <string name="language_title">言語</string>
+    <string name="language_subtitle">アプリで使用する言語を選択</string>
+    <string name="language_system">システムの言語</string>
+    <string name="select_language">言語を選択</string>
+    <string name="close">閉じる</string>
+    <string name="medical_disclaimer">必ず医療専門家の指示に従ってください。このアプリが処方内容を変更することはありません。</string>
+</resources>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">按时用药</string>
+    <string name="no_medications_title">目前已全部完成</string>
+    <string name="no_medications_body">今天没有安排用药。</string>
+    <string name="add_medication">添加药物</string>
+    <string name="nav_today">今天</string>
+    <string name="nav_settings">设置</string>
+    <string name="language_title">语言</string>
+    <string name="language_subtitle">选择应用使用的语言</string>
+    <string name="language_system">系统语言</string>
+    <string name="select_language">选择语言</string>
+    <string name="close">关闭</string>
+    <string name="medical_disclaimer">请始终遵循医疗专业人员的建议。本应用不会更改您的处方。</string>
+</resources>
+
