@@ -12,5 +12,17 @@
     <string name="select_language">언어 선택</string>
     <string name="close">닫기</string>
     <string name="medical_disclaimer">항상 의료 전문가의 지침을 따르세요. 이 앱은 처방을 변경하지 않습니다.</string>
+    <string name="add_medication_title">새 약</string>
+    <string name="medication_name">약 이름</string>
+    <string name="dosage">처방 용량</string>
+    <string name="dosage_hint">예: 500 mg 또는 20방울</string>
+    <string name="schedule_time">시간</string>
+    <string name="time_hint">예: 08:00</string>
+    <string name="required_field">약 이름을 입력하세요</string>
+    <string name="invalid_time">HH:mm 형식의 올바른 시간을 입력하세요</string>
+    <string name="cancel">취소</string>
+    <string name="save">저장</string>
+    <string name="medications_today">오늘의 약</string>
+    <string name="dosage_not_informed">용량을 입력하지 않음</string>
 </resources>
 

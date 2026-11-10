@@ -12,5 +12,17 @@
     <string name="select_language">Seleziona lingua</string>
     <string name="close">Chiudi</string>
     <string name="medical_disclaimer">Segui sempre le indicazioni del professionista sanitario. L’app non modifica la prescrizione.</string>
+    <string name="add_medication_title">Nuovo farmaco</string>
+    <string name="medication_name">Nome del farmaco</string>
+    <string name="dosage">Dosaggio prescritto</string>
+    <string name="dosage_hint">Es.: 500 mg o 20 gocce</string>
+    <string name="schedule_time">Ora</string>
+    <string name="time_hint">Es.: 08:00</string>
+    <string name="required_field">Inserisci il nome del farmaco</string>
+    <string name="invalid_time">Usa un orario valido nel formato HH:mm</string>
+    <string name="cancel">Annulla</string>
+    <string name="save">Salva</string>
+    <string name="medications_today">Farmaci di oggi</string>
+    <string name="dosage_not_informed">Dosaggio non indicato</string>
 </resources>
 

@@ -12,5 +12,17 @@
     <string name="select_language">भाषा चुनें</string>
     <string name="close">बंद करें</string>
     <string name="medical_disclaimer">हमेशा स्वास्थ्य पेशेवर की सलाह का पालन करें। ऐप आपके नुस्खे को नहीं बदलता।</string>
+    <string name="add_medication_title">नई दवा</string>
+    <string name="medication_name">दवा का नाम</string>
+    <string name="dosage">निर्धारित खुराक</string>
+    <string name="dosage_hint">उदाहरण: 500 mg या 20 बूंदें</string>
+    <string name="schedule_time">समय</string>
+    <string name="time_hint">उदाहरण: 08:00</string>
+    <string name="required_field">दवा का नाम दर्ज करें</string>
+    <string name="invalid_time">HH:mm प्रारूप में सही समय दर्ज करें</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="save">सहेजें</string>
+    <string name="medications_today">आज की दवाएँ</string>
+    <string name="dosage_not_informed">खुराक दर्ज नहीं की गई</string>
 </resources>
 

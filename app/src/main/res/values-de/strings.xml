@@ -12,5 +12,17 @@
     <string name="select_language">Sprache auswählen</string>
     <string name="close">Schließen</string>
     <string name="medical_disclaimer">Befolgen Sie immer die Anweisungen Ihrer medizinischen Fachkraft. Die App ändert Ihre Verordnung nicht.</string>
+    <string name="add_medication_title">Neues Medikament</string>
+    <string name="medication_name">Name des Medikaments</string>
+    <string name="dosage">Verordnete Dosierung</string>
+    <string name="dosage_hint">Beispiel: 500 mg oder 20 Tropfen</string>
+    <string name="schedule_time">Uhrzeit</string>
+    <string name="time_hint">Beispiel: 08:00</string>
+    <string name="required_field">Geben Sie den Medikamentennamen ein</string>
+    <string name="invalid_time">Verwenden Sie eine gültige Uhrzeit im Format HH:mm</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="save">Speichern</string>
+    <string name="medications_today">Heutige Medikamente</string>
+    <string name="dosage_not_informed">Dosierung nicht angegeben</string>
 </resources>
 

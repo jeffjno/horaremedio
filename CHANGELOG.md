@@ -16,6 +16,9 @@ Todas as mudanças relevantes devem ser registradas neste arquivo. Recomenda-se 
 - Recursos completos para 20 idiomas e suporte a layout RTL em árabe.
 - Geração automática da lista de idiomas exibida nas configurações do Android 13 ou superior.
 - Testes unitários para a lista de idiomas e correspondência de códigos regionais.
+- Formulário funcional de medicamento com nome, dosagem e horário.
+- Validação de campos, persistência local privada e exibição dos medicamentos na tela de hoje.
+- Traduções do fluxo de cadastro nos 20 idiomas suportados.
 
 #### Validado
 
@@ -34,8 +37,8 @@ Todas as mudanças relevantes devem ser registradas neste arquivo. Recomenda-se 
 
 #### Pendente
 
-- Criar e compilar o projeto Android real.
-- Implementar e testar as funcionalidades descritas no planejamento.
+- Migrar o cadastro básico para o modelo relacional completo em Room.
+- Implementar e testar as demais funcionalidades descritas no planejamento.
 - Definir ID do aplicativo, `minSdk`/`targetSdk`, dependências e licença.
 - Confirmar responsáveis, contatos e política efetiva de tratamento de dados.
 - Executar testes em dispositivos reais e registrar evidências.

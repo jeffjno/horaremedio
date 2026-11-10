@@ -12,5 +12,17 @@
     <string name="select_language">Chọn ngôn ngữ</string>
     <string name="close">Đóng</string>
     <string name="medical_disclaimer">Luôn làm theo hướng dẫn của chuyên gia y tế. Ứng dụng không thay đổi đơn thuốc của bạn.</string>
+    <string name="add_medication_title">Thuốc mới</string>
+    <string name="medication_name">Tên thuốc</string>
+    <string name="dosage">Liều được kê</string>
+    <string name="dosage_hint">Ví dụ: 500 mg hoặc 20 giọt</string>
+    <string name="schedule_time">Thời gian</string>
+    <string name="time_hint">Ví dụ: 08:00</string>
+    <string name="required_field">Nhập tên thuốc</string>
+    <string name="invalid_time">Nhập thời gian hợp lệ theo định dạng HH:mm</string>
+    <string name="cancel">Hủy</string>
+    <string name="save">Lưu</string>
+    <string name="medications_today">Thuốc hôm nay</string>
+    <string name="dosage_not_informed">Chưa nhập liều</string>
 </resources>
 

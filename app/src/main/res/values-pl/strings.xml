@@ -12,5 +12,17 @@
     <string name="select_language">Wybierz język</string>
     <string name="close">Zamknij</string>
     <string name="medical_disclaimer">Zawsze postępuj zgodnie z zaleceniami personelu medycznego. Aplikacja nie zmienia recepty.</string>
+    <string name="add_medication_title">Nowy lek</string>
+    <string name="medication_name">Nazwa leku</string>
+    <string name="dosage">Zalecona dawka</string>
+    <string name="dosage_hint">Np.: 500 mg lub 20 kropli</string>
+    <string name="schedule_time">Godzina</string>
+    <string name="time_hint">Np.: 08:00</string>
+    <string name="required_field">Wprowadź nazwę leku</string>
+    <string name="invalid_time">Podaj prawidłową godzinę w formacie HH:mm</string>
+    <string name="cancel">Anuluj</string>
+    <string name="save">Zapisz</string>
+    <string name="medications_today">Dzisiejsze leki</string>
+    <string name="dosage_not_informed">Nie podano dawki</string>
 </resources>
 

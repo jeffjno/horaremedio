@@ -12,5 +12,17 @@
     <string name="select_language">اختيار اللغة</string>
     <string name="close">إغلاق</string>
     <string name="medical_disclaimer">اتبع دائمًا إرشادات أخصائي الرعاية الصحية. لا يغيّر التطبيق وصفتك الطبية.</string>
+    <string name="add_medication_title">دواء جديد</string>
+    <string name="medication_name">اسم الدواء</string>
+    <string name="dosage">الجرعة الموصوفة</string>
+    <string name="dosage_hint">مثال: 500 ملغ أو 20 قطرة</string>
+    <string name="schedule_time">الوقت</string>
+    <string name="time_hint">مثال: 08:00</string>
+    <string name="required_field">أدخل اسم الدواء</string>
+    <string name="invalid_time">استخدم وقتًا صالحًا بالتنسيق HH:mm</string>
+    <string name="cancel">إلغاء</string>
+    <string name="save">حفظ</string>
+    <string name="medications_today">أدوية اليوم</string>
+    <string name="dosage_not_informed">لم يتم إدخال الجرعة</string>
 </resources>
 

@@ -12,5 +12,17 @@
     <string name="select_language">Dil seçin</string>
     <string name="close">Kapat</string>
     <string name="medical_disclaimer">Her zaman sağlık uzmanınızın talimatlarına uyun. Uygulama reçetenizi değiştirmez.</string>
+    <string name="add_medication_title">Yeni ilaç</string>
+    <string name="medication_name">İlaç adı</string>
+    <string name="dosage">Reçete edilen doz</string>
+    <string name="dosage_hint">Örnek: 500 mg veya 20 damla</string>
+    <string name="schedule_time">Saat</string>
+    <string name="time_hint">Örnek: 08:00</string>
+    <string name="required_field">İlaç adını girin</string>
+    <string name="invalid_time">HH:mm biçiminde geçerli bir saat girin</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="medications_today">Bugünün ilaçları</string>
+    <string name="dosage_not_informed">Doz belirtilmedi</string>
 </resources>
 

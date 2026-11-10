@@ -3,6 +3,7 @@
 build/
 **/build/
 local.properties
+gradle/gradle-daemon-jvm.properties
 *.apk
 *.aab
 *.ap_

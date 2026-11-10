@@ -12,5 +12,17 @@
     <string name="select_language">言語を選択</string>
     <string name="close">閉じる</string>
     <string name="medical_disclaimer">必ず医療専門家の指示に従ってください。このアプリが処方内容を変更することはありません。</string>
+    <string name="add_medication_title">新しい薬</string>
+    <string name="medication_name">薬の名前</string>
+    <string name="dosage">処方された用量</string>
+    <string name="dosage_hint">例：500 mg または 20滴</string>
+    <string name="schedule_time">時刻</string>
+    <string name="time_hint">例：08:00</string>
+    <string name="required_field">薬の名前を入力してください</string>
+    <string name="invalid_time">HH:mm形式の正しい時刻を入力してください</string>
+    <string name="cancel">キャンセル</string>
+    <string name="save">保存</string>
+    <string name="medications_today">今日の薬</string>
+    <string name="dosage_not_informed">用量が入力されていません</string>
 </resources>
 

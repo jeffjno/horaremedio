@@ -12,4 +12,16 @@
     <string name="select_language">Pilih bahasa</string>
     <string name="close">Tutup</string>
     <string name="medical_disclaimer">Selalu ikuti arahan tenaga kesehatan. Aplikasi tidak mengubah resep Anda.</string>
+    <string name="add_medication_title">Obat baru</string>
+    <string name="medication_name">Nama obat</string>
+    <string name="dosage">Dosis yang diresepkan</string>
+    <string name="dosage_hint">Contoh: 500 mg atau 20 tetes</string>
+    <string name="schedule_time">Waktu</string>
+    <string name="time_hint">Contoh: 08:00</string>
+    <string name="required_field">Masukkan nama obat</string>
+    <string name="invalid_time">Gunakan waktu yang valid dalam format HH:mm</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <string name="medications_today">Obat hari ini</string>
+    <string name="dosage_not_informed">Dosis belum diisi</string>
 </resources>

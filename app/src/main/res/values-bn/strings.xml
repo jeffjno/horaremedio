@@ -12,5 +12,17 @@
     <string name="select_language">ভাষা নির্বাচন করুন</string>
     <string name="close">বন্ধ করুন</string>
     <string name="medical_disclaimer">সবসময় স্বাস্থ্যসেবা পেশাজীবীর পরামর্শ মেনে চলুন। অ্যাপ আপনার ব্যবস্থাপত্র পরিবর্তন করে না।</string>
+    <string name="add_medication_title">নতুন ওষুধ</string>
+    <string name="medication_name">ওষুধের নাম</string>
+    <string name="dosage">নির্ধারিত মাত্রা</string>
+    <string name="dosage_hint">উদাহরণ: 500 mg বা 20 ফোঁটা</string>
+    <string name="schedule_time">সময়</string>
+    <string name="time_hint">উদাহরণ: 08:00</string>
+    <string name="required_field">ওষুধের নাম লিখুন</string>
+    <string name="invalid_time">HH:mm বিন্যাসে সঠিক সময় লিখুন</string>
+    <string name="cancel">বাতিল</string>
+    <string name="save">সংরক্ষণ করুন</string>
+    <string name="medications_today">আজকের ওষুধ</string>
+    <string name="dosage_not_informed">মাত্রা দেওয়া হয়নি</string>
 </resources>
 

@@ -35,6 +35,7 @@ import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -50,11 +51,15 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.core.os.LocaleListCompat
+import br.com.remediohoracerta.data.MedicationStorage
 import br.com.remediohoracerta.core.i18n.SupportedLanguages
+import br.com.remediohoracerta.domain.model.Medication
+import br.com.remediohoracerta.domain.model.MedicationInputValidator
 import br.com.remediohoracerta.ui.theme.RemedioHoraCertaTheme
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -75,8 +80,11 @@ class MainActivity : AppCompatActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun RemedioApp() {
+    val context = LocalContext.current
     var selectedTab by rememberSaveable { mutableIntStateOf(0) }
     var showLanguagePicker by rememberSaveable { mutableStateOf(false) }
+    var showAddMedication by rememberSaveable { mutableStateOf(false) }
+    var medications by remember { mutableStateOf(MedicationStorage.load(context)) }
 
     Scaffold(
         topBar = {
@@ -111,7 +119,11 @@ private fun RemedioApp() {
         },
     ) { innerPadding ->
         if (selectedTab == 0) {
-            TodayScreen(innerPadding)
+            TodayScreen(
+                contentPadding = innerPadding,
+                medications = medications,
+                onAddMedication = { showAddMedication = true },
+            )
         } else {
             SettingsScreen(innerPadding, onChooseLanguage = { showLanguagePicker = true })
         }
@@ -120,10 +132,24 @@ private fun RemedioApp() {
     if (showLanguagePicker) {
         LanguagePicker(onDismiss = { showLanguagePicker = false })
     }
+
+    if (showAddMedication) {
+        AddMedicationDialog(
+            onDismiss = { showAddMedication = false },
+            onSave = { name, dosage, time ->
+                medications = MedicationStorage.add(context, name, dosage, time)
+                showAddMedication = false
+            },
+        )
+    }
 }
 
 @Composable
-private fun TodayScreen(contentPadding: PaddingValues) {
+private fun TodayScreen(
+    contentPadding: PaddingValues,
+    medications: List<Medication>,
+    onAddMedication: () -> Unit,
+) {
     val locale = LocalConfiguration.current.locales[0]
     val formattedDate = remember(locale) {
         LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(locale))
@@ -146,41 +172,54 @@ private fun TodayScreen(contentPadding: PaddingValues) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
-        item {
-            Card(
-                modifier = Modifier.fillMaxWidth(),
-                colors = CardDefaults.cardColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                ),
-            ) {
-                Row(
-                    modifier = Modifier.padding(20.dp),
-                    horizontalArrangement = Arrangement.spacedBy(16.dp),
-                    verticalAlignment = Alignment.CenterVertically,
+        if (medications.isEmpty()) {
+            item {
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    ),
                 ) {
-                    Icon(
-                        imageVector = Icons.Default.CheckCircle,
-                        contentDescription = null,
-                        tint = MaterialTheme.colorScheme.primary,
-                    )
-                    Column {
-                        Text(
-                            text = stringResource(R.string.no_medications_title),
-                            style = MaterialTheme.typography.titleLarge,
-                            fontWeight = FontWeight.Bold,
+                    Row(
+                        modifier = Modifier.padding(20.dp),
+                        horizontalArrangement = Arrangement.spacedBy(16.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Icon(
+                            imageVector = Icons.Default.CheckCircle,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary,
                         )
-                        Spacer(Modifier.height(4.dp))
-                        Text(
-                            text = stringResource(R.string.no_medications_body),
-                            style = MaterialTheme.typography.bodyLarge,
-                        )
+                        Column {
+                            Text(
+                                text = stringResource(R.string.no_medications_title),
+                                style = MaterialTheme.typography.titleLarge,
+                                fontWeight = FontWeight.Bold,
+                            )
+                            Spacer(Modifier.height(4.dp))
+                            Text(
+                                text = stringResource(R.string.no_medications_body),
+                                style = MaterialTheme.typography.bodyLarge,
+                            )
+                        }
                     }
                 }
+            }
+        } else {
+            item {
+                Text(
+                    text = stringResource(R.string.medications_today),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                )
+            }
+            items(medications, key = Medication::id) { medication ->
+                MedicationCard(medication)
             }
         }
         item {
             Button(
-                onClick = { },
+                onClick = onAddMedication,
                 modifier = Modifier.fillMaxWidth(),
                 contentPadding = PaddingValues(16.dp),
             ) {
@@ -197,6 +236,115 @@ private fun TodayScreen(contentPadding: PaddingValues) {
             )
         }
     }
+}
+
+@Composable
+private fun MedicationCard(medication: Medication) {
+    Card(modifier = Modifier.fillMaxWidth()) {
+        Row(
+            modifier = Modifier.padding(20.dp),
+            horizontalArrangement = Arrangement.spacedBy(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(
+                text = medication.time,
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary,
+            )
+            Column {
+                Text(
+                    text = medication.name,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                )
+                Text(
+                    text = medication.dosage.ifBlank {
+                        stringResource(R.string.dosage_not_informed)
+                    },
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun AddMedicationDialog(
+    onDismiss: () -> Unit,
+    onSave: (name: String, dosage: String, time: String) -> Unit,
+) {
+    var name by rememberSaveable { mutableStateOf("") }
+    var dosage by rememberSaveable { mutableStateOf("") }
+    var time by rememberSaveable { mutableStateOf("") }
+    var attemptedSave by rememberSaveable { mutableStateOf(false) }
+    val nameInvalid = attemptedSave && !MedicationInputValidator.isNameValid(name)
+    val timeInvalid = attemptedSave && !MedicationInputValidator.isTimeValid(time)
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(stringResource(R.string.add_medication_title)) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                OutlinedTextField(
+                    value = name,
+                    onValueChange = { name = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(stringResource(R.string.medication_name)) },
+                    singleLine = true,
+                    isError = nameInvalid,
+                    supportingText = if (nameInvalid) {
+                        { Text(stringResource(R.string.required_field)) }
+                    } else {
+                        null
+                    },
+                )
+                OutlinedTextField(
+                    value = dosage,
+                    onValueChange = { dosage = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(stringResource(R.string.dosage)) },
+                    placeholder = { Text(stringResource(R.string.dosage_hint)) },
+                    singleLine = true,
+                )
+                OutlinedTextField(
+                    value = time,
+                    onValueChange = { time = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text(stringResource(R.string.schedule_time)) },
+                    placeholder = { Text(stringResource(R.string.time_hint)) },
+                    singleLine = true,
+                    isError = timeInvalid,
+                    supportingText = if (timeInvalid) {
+                        { Text(stringResource(R.string.invalid_time)) }
+                    } else {
+                        null
+                    },
+                )
+            }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) {
+                Text(stringResource(R.string.cancel))
+            }
+        },
+        confirmButton = {
+            Button(
+                onClick = {
+                    attemptedSave = true
+                    if (
+                        MedicationInputValidator.isNameValid(name) &&
+                        MedicationInputValidator.isTimeValid(time)
+                    ) {
+                        onSave(name, dosage, time)
+                    }
+                },
+            ) {
+                Text(stringResource(R.string.save))
+            }
+        },
+    )
 }
 
 @Composable

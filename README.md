@@ -12,8 +12,8 @@
 |---|---|
 | Especificação funcional | Documentada |
 | Arquitetura e modelo de dados | Propostos, sujeitos a validação |
-| Interface em Jetpack Compose | Base implementada: painel inicial, configurações e seletor de idioma |
-| Cadastro e banco Room | A implementar |
+| Interface em Jetpack Compose | Painel inicial, configurações, seletor de idioma e formulário de medicamento |
+| Cadastro e banco Room | Cadastro básico persistente implementado; migração para o modelo Room completo ainda pendente |
 | Alarmes e notificações | A implementar e validar em aparelho físico |
 | Anexos de imagens e PDFs | A implementar |
 | Testes automatizados e manuais | Testes unitários e lint executados; testes em dispositivo ainda pendentes |

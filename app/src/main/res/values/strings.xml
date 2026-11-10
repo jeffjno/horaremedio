@@ -12,5 +12,17 @@
     <string name="select_language">Selecionar idioma</string>
     <string name="close">Fechar</string>
     <string name="medical_disclaimer">Siga sempre a orientação do profissional de saúde. O aplicativo não altera sua prescrição.</string>
+    <string name="add_medication_title">Novo medicamento</string>
+    <string name="medication_name">Nome do medicamento</string>
+    <string name="dosage">Dosagem prescrita</string>
+    <string name="dosage_hint">Ex.: 500 mg ou 20 gotas</string>
+    <string name="schedule_time">Horário</string>
+    <string name="time_hint">Ex.: 08:00</string>
+    <string name="required_field">Informe o nome do medicamento</string>
+    <string name="invalid_time">Use um horário válido no formato HH:mm</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Salvar</string>
+    <string name="medications_today">Medicamentos de hoje</string>
+    <string name="dosage_not_informed">Dosagem não informada</string>
 </resources>
 

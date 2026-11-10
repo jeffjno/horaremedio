@@ -12,5 +12,17 @@
     <string name="select_language">Taal selecteren</string>
     <string name="close">Sluiten</string>
     <string name="medical_disclaimer">Volg altijd het advies van uw zorgverlener. De app wijzigt uw voorschrift niet.</string>
+    <string name="add_medication_title">Nieuw medicijn</string>
+    <string name="medication_name">Naam van het medicijn</string>
+    <string name="dosage">Voorgeschreven dosering</string>
+    <string name="dosage_hint">Bijv.: 500 mg of 20 druppels</string>
+    <string name="schedule_time">Tijd</string>
+    <string name="time_hint">Bijv.: 08:00</string>
+    <string name="required_field">Voer de naam van het medicijn in</string>
+    <string name="invalid_time">Gebruik een geldige tijd in de notatie HH:mm</string>
+    <string name="cancel">Annuleren</string>
+    <string name="save">Opslaan</string>
+    <string name="medications_today">Medicijnen van vandaag</string>
+    <string name="dosage_not_informed">Dosering niet opgegeven</string>
 </resources>
 
