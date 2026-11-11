@@ -1,6 +1,6 @@
 # Remédio Hora Certa
 
-> **Status:** base Android funcional criada em 2026-11-10, compilada e validada com testes unitários e Android Lint. O cadastro, persistência, alarmes e demais recursos clínicos do MVP ainda serão implementados nas próximas etapas.
+> **Status:** aplicativo Android funcional, com cadastro persistente, periodicidade, fotos pela câmera, alarmes e gerenciamento de medicamentos ativos e desativados. A base foi compilada, testada e validada no emulador; os recursos clínicos restantes do MVP continuam em desenvolvimento.
 
 **Remédio Hora Certa** é um projeto de aplicativo Android nativo para organizar horários de medicamentos, lembrar as doses programadas e permitir que a pessoa registre o que efetivamente tomou. A experiência prioriza pessoas idosas, pessoas com TDAH e outras pessoas que se beneficiam de uma interface objetiva e acessível.
 
@@ -14,9 +14,10 @@
 | Arquitetura e modelo de dados | Propostos, sujeitos a validação |
 | Interface em Jetpack Compose | Painel inicial, configurações, seletor de idioma e formulário de medicamento |
 | Cadastro e banco Room | Cadastro básico persistente implementado; migração para o modelo Room completo ainda pendente |
-| Alarmes e notificações | A implementar e validar em aparelho físico |
-| Anexos de imagens e PDFs | A implementar |
-| Testes automatizados e manuais | Testes unitários e lint executados; testes em dispositivo ainda pendentes |
+| Alarmes e notificações | Agendamento recorrente, notificação de alta prioridade e adiamento por 10 minutos implementados; validação em aparelho físico ainda pendente |
+| Anexos de imagens e PDFs | Fotos de medicamento e receita pela câmera em armazenamento privado implementadas; PDFs ainda pendentes |
+| Ativação e exclusão | Desativação, reativação, ordenação por estado e exclusão com confirmação implementadas |
+| Testes automatizados e manuais | Testes unitários, lint, build e fluxos principais no emulador executados |
 | APK/AAB publicável | APK de depuração gerado; versão de produção ainda não preparada |
 
 **Como atualizar esta tabela:** ao concluir cada etapa, atualizar o status com base em código, testes e commits reais. Nunca marcar um recurso como concluído apenas porque ele está descrito neste README.
@@ -58,7 +59,7 @@ Todo novo texto de interface deve ser criado em `app/src/main/res/values/strings
 | Alarmes | AlarmManager, quando cabível e autorizado pelo sistema |
 | Notificações | NotificationManager e canais de notificação |
 | Manutenção assíncrona | WorkManager (não como substituto de alarme exato) |
-| Anexos | Android Photo Picker, câmera/arquivo privado e Storage Access Framework |
+| Anexos | Câmera com arquivo privado do aplicativo; Storage Access Framework previsto para PDFs |
 | Build | Android Gradle Plugin 9.3.3 e Gradle 9.5.0 |
 | Versionamento | Git local; Git remoto opcional |
 

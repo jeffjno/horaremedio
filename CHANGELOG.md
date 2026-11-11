@@ -6,6 +6,24 @@ Todas as mudanças relevantes devem ser registradas neste arquivo. Recomenda-se 
 
 ## [Não lançado]
 
+### Gerenciamento e lembretes — 2026-11-11
+
+#### Adicionado
+
+- Seletor visual de horário e periodicidade diária, em dias úteis ou em dias personalizados.
+- Fotos de medicamento e receita capturadas diretamente pela câmera e mantidas no armazenamento privado do aplicativo.
+- Alarmes recorrentes, notificações de alta prioridade e opção de lembrar novamente em 10 minutos.
+- Desativação e reativação de medicamentos sem perda do cadastro ou das fotos.
+- Separação visual entre medicamentos ativos e desativados, com os ativos exibidos primeiro.
+- Exclusão definitiva com confirmação e remoção dos alarmes e arquivos privados associados.
+- Traduções dos novos fluxos nos 20 idiomas suportados.
+
+#### Validado
+
+- `assembleDebug`, `testDebugUnitTest` e `lintDebug` executados com sucesso.
+- Cadastro, desativação, reativação, ordenação e exclusão verificados no emulador Android.
+- Migração compatível: medicamentos salvos em versões anteriores são considerados ativos.
+
 ### Base Android multilíngue — 2026-11-10
 
 #### Adicionado

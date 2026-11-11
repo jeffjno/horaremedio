@@ -5,6 +5,10 @@ data class Medication(
     val name: String,
     val dosage: String,
     val time: String,
+    val daysOfWeek: Set<Int> = (1..7).toSet(),
+    val medicationPhotoPath: String? = null,
+    val prescriptionPhotoPath: String? = null,
+    val isActive: Boolean = true,
 )
 
 object MedicationInputValidator {
