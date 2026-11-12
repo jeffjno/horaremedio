@@ -1,6 +1,9 @@
 package br.com.remediohoracerta
 
 import android.Manifest
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.pm.PackageManager
 import android.graphics.BitmapFactory
 import android.os.Build
@@ -9,6 +12,8 @@ import android.app.AlarmManager
 import android.content.Intent
 import android.net.Uri
 import android.provider.Settings
+import android.widget.Toast
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -35,6 +40,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
@@ -46,6 +52,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
@@ -79,6 +86,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.os.LocaleListCompat
 import br.com.remediohoracerta.attachments.PhotoCapture
 import br.com.remediohoracerta.attachments.PhotoKind
+import br.com.remediohoracerta.config.AppProfile
 import br.com.remediohoracerta.data.MedicationStorage
 import br.com.remediohoracerta.core.i18n.SupportedLanguages
 import br.com.remediohoracerta.domain.model.Medication
@@ -127,15 +135,20 @@ private fun RemedioApp() {
     var selectedTab by rememberSaveable { mutableIntStateOf(0) }
     var showLanguagePicker by rememberSaveable { mutableStateOf(false) }
     var showAddMedication by rememberSaveable { mutableStateOf(false) }
+    var showAbout by rememberSaveable { mutableStateOf(false) }
     var medications by remember { mutableStateOf(MedicationStorage.load(context)) }
     var medicationToDelete by remember { mutableStateOf<Medication?>(null) }
+
+    BackHandler(enabled = showAbout) { showAbout = false }
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = {
                     Text(
-                        text = if (selectedTab == 0) {
+                        text = if (showAbout) {
+                            stringResource(R.string.about_app)
+                        } else if (selectedTab == 0) {
                             stringResource(R.string.nav_today)
                         } else {
                             stringResource(R.string.nav_settings)
@@ -143,10 +156,20 @@ private fun RemedioApp() {
                         fontWeight = FontWeight.SemiBold,
                     )
                 },
+                navigationIcon = {
+                    if (showAbout) {
+                        IconButton(onClick = { showAbout = false }) {
+                            Icon(
+                                Icons.AutoMirrored.Filled.ArrowBack,
+                                contentDescription = stringResource(R.string.back),
+                            )
+                        }
+                    }
+                },
             )
         },
         bottomBar = {
-            NavigationBar {
+            if (!showAbout) NavigationBar {
                 NavigationBarItem(
                     selected = selectedTab == 0,
                     onClick = { selectedTab = 0 },
@@ -162,7 +185,9 @@ private fun RemedioApp() {
             }
         },
     ) { innerPadding ->
-        if (selectedTab == 0) {
+        if (showAbout) {
+            AboutScreen(innerPadding)
+        } else if (selectedTab == 0) {
             TodayScreen(
                 contentPadding = innerPadding,
                 medications = medications,
@@ -184,7 +209,11 @@ private fun RemedioApp() {
                 onDelete = { medicationToDelete = it },
             )
         } else {
-            SettingsScreen(innerPadding, onChooseLanguage = { showLanguagePicker = true })
+            SettingsScreen(
+                contentPadding = innerPadding,
+                onChooseLanguage = { showLanguagePicker = true },
+                onOpenAbout = { showAbout = true },
+            )
         }
     }
 
@@ -820,6 +849,7 @@ private fun PhotoCaptureRow(
 private fun SettingsScreen(
     contentPadding: PaddingValues,
     onChooseLanguage: () -> Unit,
+    onOpenAbout: () -> Unit,
 ) {
     val context = LocalContext.current
     val selectedTag = AppCompatDelegate.getApplicationLocales().get(0)?.toLanguageTag().orEmpty()
@@ -901,6 +931,228 @@ private fun SettingsScreen(
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                     }
+                }
+            }
+        }
+        item {
+            Text(
+                text = stringResource(R.string.information),
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(top = 8.dp),
+            )
+        }
+        item {
+            Card(onClick = onOpenAbout, modifier = Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(20.dp)) {
+                    Text(
+                        text = stringResource(R.string.about_app),
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.SemiBold,
+                    )
+                    Text(
+                        text = stringResource(R.string.about_app_subtitle),
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun AboutScreen(contentPadding: PaddingValues) {
+    val context = LocalContext.current
+    val notConfigured = stringResource(R.string.not_configured)
+    val pixLabel = stringResource(R.string.pix)
+    val pixCopiedMessage = stringResource(R.string.pix_key_copied)
+    val otherSupportTitle = AppProfile.otherSupportLabel.ifBlank {
+        stringResource(R.string.other_support_methods)
+    }
+
+    LazyColumn(
+        modifier = Modifier.fillMaxSize(),
+        contentPadding = PaddingValues(
+            start = 20.dp,
+            top = contentPadding.calculateTopPadding() + 12.dp,
+            end = 20.dp,
+            bottom = contentPadding.calculateBottomPadding() + 24.dp,
+        ),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        item {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
+                ),
+            ) {
+                Column(
+                    modifier = Modifier.padding(20.dp),
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    Text(
+                        text = stringResource(R.string.app_name),
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold,
+                    )
+                    Text(
+                        text = stringResource(R.string.about_app_description),
+                        style = MaterialTheme.typography.bodyLarge,
+                    )
+                    Text(
+                        text = stringResource(R.string.app_version, BuildConfig.VERSION_NAME),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+        }
+
+        item {
+            AboutSectionCard(title = stringResource(R.string.developer_information)) {
+                InformationRow(
+                    label = stringResource(R.string.developer_name),
+                    value = AppProfile.developerName.ifBlank { notConfigured },
+                )
+                InformationRow(
+                    label = stringResource(R.string.developer_contact),
+                    value = AppProfile.developerContact.ifBlank { notConfigured },
+                )
+            }
+        }
+
+        item {
+            Text(
+                text = stringResource(R.string.support_project),
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
+            )
+            Text(
+                text = stringResource(R.string.support_project_description),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+
+        item {
+            SupportMethodCard(
+                title = pixLabel,
+                value = AppProfile.pixKey,
+                emptyValue = notConfigured,
+                actionLabel = stringResource(R.string.copy_pix_key),
+                onAction = {
+                    val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE)
+                        as ClipboardManager
+                    clipboard.setPrimaryClip(
+                        ClipData.newPlainText(pixLabel, AppProfile.pixKey),
+                    )
+                    Toast.makeText(
+                        context,
+                        pixCopiedMessage,
+                        Toast.LENGTH_SHORT,
+                    ).show()
+                },
+            )
+        }
+
+        item {
+            SupportMethodCard(
+                title = stringResource(R.string.amazon_wishlist),
+                value = AppProfile.amazonWishlistUrl,
+                emptyValue = notConfigured,
+                actionLabel = stringResource(R.string.open_link),
+                onAction = {
+                    context.startActivity(
+                        Intent(Intent.ACTION_VIEW, Uri.parse(AppProfile.amazonWishlistUrl)),
+                    )
+                },
+            )
+        }
+
+        item {
+            SupportMethodCard(
+                title = otherSupportTitle,
+                value = AppProfile.otherSupportUrl,
+                emptyValue = notConfigured,
+                actionLabel = stringResource(R.string.open_link),
+                onAction = {
+                    context.startActivity(
+                        Intent(Intent.ACTION_VIEW, Uri.parse(AppProfile.otherSupportUrl)),
+                    )
+                },
+            )
+        }
+
+        item {
+            Text(
+                text = stringResource(R.string.donation_disclaimer),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+    }
+}
+
+@Composable
+private fun AboutSectionCard(
+    title: String,
+    content: @Composable () -> Unit,
+) {
+    Card(modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier.padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+            )
+            content()
+        }
+    }
+}
+
+@Composable
+private fun InformationRow(label: String, value: String) {
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelLarge,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        Text(text = value, style = MaterialTheme.typography.bodyLarge)
+    }
+}
+
+@Composable
+private fun SupportMethodCard(
+    title: String,
+    value: String,
+    emptyValue: String,
+    actionLabel: String,
+    onAction: () -> Unit,
+) {
+    Card(modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier.padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.titleMedium,
+                fontWeight = FontWeight.SemiBold,
+            )
+            Text(
+                text = value.ifBlank { emptyValue },
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            if (value.isNotBlank()) {
+                OutlinedButton(onClick = onAction) {
+                    Text(actionLabel)
                 }
             }
         }

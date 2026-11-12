@@ -57,5 +57,24 @@
     <string name="delete">Usuń</string>
     <string name="delete_medication_title">Usunąć lek?</string>
     <string name="delete_medication_message">Trwale usunąć „%1$s”? Wpis, alarmy i zdjęcia zostaną skasowane. Tej operacji nie można cofnąć.</string>
+    <string name="back">Wstecz</string>
+    <string name="information">Informacje</string>
+    <string name="about_app">O aplikacji</string>
+    <string name="about_app_subtitle">Dowiedz się więcej, poznaj twórcę i wesprzyj projekt</string>
+    <string name="about_app_description">Prosta aplikacja pomagająca organizować leki i otrzymywać przypomnienia o zaplanowanych porach.</string>
+    <string name="app_version">Wersja %1$s</string>
+    <string name="developer_information">Informacje o twórcy</string>
+    <string name="developer_name">Nazwa</string>
+    <string name="developer_contact">Kontakt</string>
+    <string name="not_configured">Nie skonfigurowano</string>
+    <string name="support_project">Wesprzyj ten projekt</string>
+    <string name="support_project_description">Jeśli aplikacja jest przydatna, możesz dobrowolnie wesprzeć jej rozwój i utrzymanie.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Kopiuj klucz Pix</string>
+    <string name="pix_key_copied">Skopiowano klucz Pix</string>
+    <string name="amazon_wishlist">Lista życzeń Amazon</string>
+    <string name="open_link">Otwórz link</string>
+    <string name="other_support_methods">Inne formy wsparcia</string>
+    <string name="donation_disclaimer">Wpłaty są opcjonalne i nie zmieniają działania aplikacji ani dostępu do jej funkcji.</string>
 </resources>
 

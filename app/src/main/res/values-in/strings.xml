@@ -57,4 +57,23 @@
     <string name="delete">Hapus</string>
     <string name="delete_medication_title">Hapus obat?</string>
     <string name="delete_medication_message">Hapus “%1$s” secara permanen? Catatan, alarm, dan foto akan dihapus. Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="back">Kembali</string>
+    <string name="information">Informasi</string>
+    <string name="about_app">Tentang aplikasi</string>
+    <string name="about_app_subtitle">Pelajari lebih lanjut, kenali pengembang, dan dukung proyek</string>
+    <string name="about_app_description">Aplikasi sederhana untuk membantu mengatur obat dan menerima pengingat pada waktu yang dijadwalkan.</string>
+    <string name="app_version">Versi %1$s</string>
+    <string name="developer_information">Informasi pengembang</string>
+    <string name="developer_name">Nama</string>
+    <string name="developer_contact">Kontak</string>
+    <string name="not_configured">Belum dikonfigurasi</string>
+    <string name="support_project">Dukung proyek ini</string>
+    <string name="support_project_description">Jika aplikasi ini bermanfaat, Anda dapat berkontribusi secara sukarela untuk pengembangan dan pemeliharaannya.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Salin kunci Pix</string>
+    <string name="pix_key_copied">Kunci Pix disalin</string>
+    <string name="amazon_wishlist">Daftar keinginan Amazon</string>
+    <string name="open_link">Buka tautan</string>
+    <string name="other_support_methods">Cara dukungan lainnya</string>
+    <string name="donation_disclaimer">Kontribusi bersifat opsional dan tidak mengubah cara kerja atau akses ke fitur aplikasi.</string>
 </resources>

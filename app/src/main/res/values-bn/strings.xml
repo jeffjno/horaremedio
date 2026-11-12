@@ -57,5 +57,24 @@
     <string name="delete">মুছুন</string>
     <string name="delete_medication_title">ওষুধ মুছবেন?</string>
     <string name="delete_medication_message">“%1$s” স্থায়ীভাবে মুছবেন? রেকর্ড, অ্যালার্ম ও ছবি মুছে যাবে। এটি আর ফিরিয়ে আনা যাবে না।</string>
+    <string name="back">ফিরে যান</string>
+    <string name="information">তথ্য</string>
+    <string name="about_app">অ্যাপ সম্পর্কে</string>
+    <string name="about_app_subtitle">আরও জানুন, ডেভেলপারের পরিচয় নিন এবং প্রকল্পটি সহায়তা করুন</string>
+    <string name="about_app_description">ওষুধ সাজাতে এবং নির্ধারিত সময়ে রিমাইন্ডার পেতে সহায়তাকারী একটি সহজ অ্যাপ।</string>
+    <string name="app_version">সংস্করণ %1$s</string>
+    <string name="developer_information">ডেভেলপারের তথ্য</string>
+    <string name="developer_name">নাম</string>
+    <string name="developer_contact">যোগাযোগ</string>
+    <string name="not_configured">কনফিগার করা হয়নি</string>
+    <string name="support_project">এই প্রকল্পটি সহায়তা করুন</string>
+    <string name="support_project_description">অ্যাপটি উপকারী হলে এর উন্নয়ন ও রক্ষণাবেক্ষণে স্বেচ্ছায় অবদান রাখতে পারেন।</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pix কী কপি করুন</string>
+    <string name="pix_key_copied">Pix কী কপি হয়েছে</string>
+    <string name="amazon_wishlist">Amazon ইচ্ছা তালিকা</string>
+    <string name="open_link">লিংক খুলুন</string>
+    <string name="other_support_methods">সহায়তার অন্যান্য উপায়</string>
+    <string name="donation_disclaimer">অবদান ঐচ্ছিক এবং অ্যাপের কাজ বা ফিচারে প্রবেশাধিকার পরিবর্তন করে না।</string>
 </resources>
 

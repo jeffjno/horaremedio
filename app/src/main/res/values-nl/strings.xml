@@ -57,5 +57,24 @@
     <string name="delete">Verwijderen</string>
     <string name="delete_medication_title">Medicijn verwijderen?</string>
     <string name="delete_medication_message">“%1$s” definitief verwijderen? De registratie, alarmen en foto’s worden gewist. Dit kan niet ongedaan worden gemaakt.</string>
+    <string name="back">Terug</string>
+    <string name="information">Informatie</string>
+    <string name="about_app">Over de app</string>
+    <string name="about_app_subtitle">Lees meer, ontmoet de ontwikkelaar en steun het project</string>
+    <string name="about_app_description">Een eenvoudige app om medicijnen te organiseren en herinneringen op geplande tijden te ontvangen.</string>
+    <string name="app_version">Versie %1$s</string>
+    <string name="developer_information">Informatie over de ontwikkelaar</string>
+    <string name="developer_name">Naam</string>
+    <string name="developer_contact">Contact</string>
+    <string name="not_configured">Niet geconfigureerd</string>
+    <string name="support_project">Steun dit project</string>
+    <string name="support_project_description">Als de app nuttig voor je is, kun je vrijwillig bijdragen aan de ontwikkeling en het onderhoud.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pix-sleutel kopiëren</string>
+    <string name="pix_key_copied">Pix-sleutel gekopieerd</string>
+    <string name="amazon_wishlist">Amazon-verlanglijst</string>
+    <string name="open_link">Link openen</string>
+    <string name="other_support_methods">Andere manieren om te steunen</string>
+    <string name="donation_disclaimer">Bijdragen zijn optioneel en veranderen de werking van of toegang tot de functies van de app niet.</string>
 </resources>
 

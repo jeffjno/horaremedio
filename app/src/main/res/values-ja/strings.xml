@@ -57,5 +57,24 @@
     <string name="delete">削除</string>
     <string name="delete_medication_title">薬を削除しますか？</string>
     <string name="delete_medication_message">「%1$s」を完全に削除しますか？登録内容、アラーム、写真が削除されます。この操作は元に戻せません。</string>
+    <string name="back">戻る</string>
+    <string name="information">情報</string>
+    <string name="about_app">アプリについて</string>
+    <string name="about_app_subtitle">詳細、開発者情報、プロジェクトの支援</string>
+    <string name="about_app_description">薬を整理し、設定した時刻にリマインダーを受け取るためのシンプルなアプリです。</string>
+    <string name="app_version">バージョン %1$s</string>
+    <string name="developer_information">開発者情報</string>
+    <string name="developer_name">名前</string>
+    <string name="developer_contact">連絡先</string>
+    <string name="not_configured">未設定</string>
+    <string name="support_project">このプロジェクトを支援</string>
+    <string name="support_project_description">アプリが役立つ場合は、開発と保守に任意でご支援いただけます。</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pixキーをコピー</string>
+    <string name="pix_key_copied">Pixキーをコピーしました</string>
+    <string name="amazon_wishlist">Amazonほしい物リスト</string>
+    <string name="open_link">リンクを開く</string>
+    <string name="other_support_methods">その他の支援方法</string>
+    <string name="donation_disclaimer">支援は任意であり、アプリの動作や機能へのアクセスには影響しません。</string>
 </resources>
 

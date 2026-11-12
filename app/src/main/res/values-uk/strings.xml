@@ -57,5 +57,24 @@
     <string name="delete">Видалити</string>
     <string name="delete_medication_title">Видалити ліки?</string>
     <string name="delete_medication_message">Видалити «%1$s» назавжди? Запис, будильники та фотографії буде стерто. Цю дію неможливо скасувати.</string>
+    <string name="back">Назад</string>
+    <string name="information">Інформація</string>
+    <string name="about_app">Про застосунок</string>
+    <string name="about_app_subtitle">Дізнайтеся більше, познайомтеся з розробником і підтримайте проєкт</string>
+    <string name="about_app_description">Простий застосунок для організації приймання ліків і отримання нагадувань у запланований час.</string>
+    <string name="app_version">Версія %1$s</string>
+    <string name="developer_information">Інформація про розробника</string>
+    <string name="developer_name">Ім’я</string>
+    <string name="developer_contact">Контакт</string>
+    <string name="not_configured">Не налаштовано</string>
+    <string name="support_project">Підтримати проєкт</string>
+    <string name="support_project_description">Якщо застосунок корисний, ви можете добровільно підтримати його розробку та обслуговування.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Копіювати ключ Pix</string>
+    <string name="pix_key_copied">Ключ Pix скопійовано</string>
+    <string name="amazon_wishlist">Список бажань Amazon</string>
+    <string name="open_link">Відкрити посилання</string>
+    <string name="other_support_methods">Інші способи підтримки</string>
+    <string name="donation_disclaimer">Внески необов’язкові й не впливають на роботу застосунку або доступ до його функцій.</string>
 </resources>
 

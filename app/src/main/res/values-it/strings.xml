@@ -57,5 +57,24 @@
     <string name="delete">Elimina</string>
     <string name="delete_medication_title">Eliminare il farmaco?</string>
     <string name="delete_medication_message">Eliminare definitivamente “%1$s”? La registrazione, gli allarmi e le foto verranno cancellati. Questa azione non può essere annullata.</string>
+    <string name="back">Indietro</string>
+    <string name="information">Informazioni</string>
+    <string name="about_app">Informazioni sull’app</string>
+    <string name="about_app_subtitle">Scopri di più, conosci lo sviluppatore e sostieni il progetto</string>
+    <string name="about_app_description">Un’app semplice per organizzare i farmaci e ricevere promemoria negli orari programmati.</string>
+    <string name="app_version">Versione %1$s</string>
+    <string name="developer_information">Informazioni sullo sviluppatore</string>
+    <string name="developer_name">Nome</string>
+    <string name="developer_contact">Contatto</string>
+    <string name="not_configured">Non configurato</string>
+    <string name="support_project">Sostieni questo progetto</string>
+    <string name="support_project_description">Se l’app ti è utile, puoi contribuire volontariamente al suo sviluppo e alla sua manutenzione.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Copia chiave Pix</string>
+    <string name="pix_key_copied">Chiave Pix copiata</string>
+    <string name="amazon_wishlist">Lista desideri Amazon</string>
+    <string name="open_link">Apri link</string>
+    <string name="other_support_methods">Altri modi per sostenere</string>
+    <string name="donation_disclaimer">I contributi sono facoltativi e non modificano il funzionamento o l’accesso alle funzioni dell’app.</string>
 </resources>
 

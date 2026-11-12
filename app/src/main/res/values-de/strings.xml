@@ -57,5 +57,24 @@
     <string name="delete">Löschen</string>
     <string name="delete_medication_title">Medikament löschen?</string>
     <string name="delete_medication_message">„%1$s“ endgültig löschen? Eintrag, Alarme und Fotos werden gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.</string>
+    <string name="back">Zurück</string>
+    <string name="information">Informationen</string>
+    <string name="about_app">Über die App</string>
+    <string name="about_app_subtitle">Mehr erfahren, den Entwickler kennenlernen und das Projekt unterstützen</string>
+    <string name="about_app_description">Eine einfache App, mit der Sie Medikamente organisieren und Erinnerungen zu den geplanten Zeiten erhalten.</string>
+    <string name="app_version">Version %1$s</string>
+    <string name="developer_information">Entwicklerinformationen</string>
+    <string name="developer_name">Name</string>
+    <string name="developer_contact">Kontakt</string>
+    <string name="not_configured">Nicht konfiguriert</string>
+    <string name="support_project">Dieses Projekt unterstützen</string>
+    <string name="support_project_description">Wenn die App für Sie nützlich ist, können Sie freiwillig zu Entwicklung und Wartung beitragen.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pix-Schlüssel kopieren</string>
+    <string name="pix_key_copied">Pix-Schlüssel kopiert</string>
+    <string name="amazon_wishlist">Amazon-Wunschliste</string>
+    <string name="open_link">Link öffnen</string>
+    <string name="other_support_methods">Weitere Unterstützungsmöglichkeiten</string>
+    <string name="donation_disclaimer">Beiträge sind freiwillig und ändern weder die Funktion der App noch den Zugriff auf ihre Funktionen.</string>
 </resources>
 

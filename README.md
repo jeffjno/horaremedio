@@ -17,6 +17,7 @@
 | Alarmes e notificações | Agendamento recorrente, notificação de alta prioridade e adiamento por 10 minutos implementados; validação em aparelho físico ainda pendente |
 | Anexos de imagens e PDFs | Fotos de medicamento e receita pela câmera em armazenamento privado implementadas; PDFs ainda pendentes |
 | Ativação e exclusão | Desativação, reativação, ordenação por estado e exclusão com confirmação implementadas |
+| Sobre e apoio | Tela com versão, informações do desenvolvedor e espaços para Pix, Amazon e outro link implementada |
 | Testes automatizados e manuais | Testes unitários, lint, build e fluxos principais no emulador executados |
 | APK/AAB publicável | APK de depuração gerado; versão de produção ainda não preparada |
 

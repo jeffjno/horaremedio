@@ -57,5 +57,24 @@
     <string name="delete">删除</string>
     <string name="delete_medication_title">删除药物？</string>
     <string name="delete_medication_message">确定永久删除“%1$s”吗？记录、提醒和照片都将被删除，且无法撤销。</string>
+    <string name="back">返回</string>
+    <string name="information">信息</string>
+    <string name="about_app">关于应用</string>
+    <string name="about_app_subtitle">了解更多、认识开发者并支持本项目</string>
+    <string name="about_app_description">一款帮助您管理药物并在预定时间接收提醒的简单应用。</string>
+    <string name="app_version">版本 %1$s</string>
+    <string name="developer_information">开发者信息</string>
+    <string name="developer_name">姓名</string>
+    <string name="developer_contact">联系方式</string>
+    <string name="not_configured">未配置</string>
+    <string name="support_project">支持本项目</string>
+    <string name="support_project_description">如果本应用对您有帮助，您可以自愿支持其开发和维护。</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">复制 Pix 密钥</string>
+    <string name="pix_key_copied">Pix 密钥已复制</string>
+    <string name="amazon_wishlist">Amazon 心愿单</string>
+    <string name="open_link">打开链接</string>
+    <string name="other_support_methods">其他支持方式</string>
+    <string name="donation_disclaimer">支持完全自愿，不会影响应用的运行或功能访问。</string>
 </resources>
 

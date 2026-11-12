@@ -57,5 +57,24 @@
     <string name="delete">हटाएँ</string>
     <string name="delete_medication_title">दवा हटाएँ?</string>
     <string name="delete_medication_message">“%1$s” को हमेशा के लिए हटाएँ? रिकॉर्ड, अलार्म और फ़ोटो मिट जाएँगे। इसे वापस नहीं किया जा सकता।</string>
+    <string name="back">वापस</string>
+    <string name="information">जानकारी</string>
+    <string name="about_app">ऐप के बारे में</string>
+    <string name="about_app_subtitle">और जानें, डेवलपर से परिचित हों और प्रोजेक्ट का समर्थन करें</string>
+    <string name="about_app_description">दवाइयों को व्यवस्थित करने और तय समय पर रिमाइंडर पाने में मदद करने वाला सरल ऐप।</string>
+    <string name="app_version">संस्करण %1$s</string>
+    <string name="developer_information">डेवलपर की जानकारी</string>
+    <string name="developer_name">नाम</string>
+    <string name="developer_contact">संपर्क</string>
+    <string name="not_configured">कॉन्फ़िगर नहीं किया गया</string>
+    <string name="support_project">इस प्रोजेक्ट का समर्थन करें</string>
+    <string name="support_project_description">अगर ऐप आपके लिए उपयोगी है, तो आप इसके विकास और रखरखाव में स्वेच्छा से योगदान कर सकते हैं।</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pix कुंजी कॉपी करें</string>
+    <string name="pix_key_copied">Pix कुंजी कॉपी हो गई</string>
+    <string name="amazon_wishlist">Amazon इच्छा सूची</string>
+    <string name="open_link">लिंक खोलें</string>
+    <string name="other_support_methods">समर्थन के अन्य तरीके</string>
+    <string name="donation_disclaimer">योगदान वैकल्पिक हैं और ऐप के काम करने या उसकी सुविधाओं तक पहुँच को नहीं बदलते।</string>
 </resources>
 

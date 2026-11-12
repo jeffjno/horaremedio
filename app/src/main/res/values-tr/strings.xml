@@ -57,5 +57,24 @@
     <string name="delete">Sil</string>
     <string name="delete_medication_title">İlaç silinsin mi?</string>
     <string name="delete_medication_message">“%1$s” kalıcı olarak silinsin mi? Kayıt, alarmlar ve fotoğraflar silinecek. Bu işlem geri alınamaz.</string>
+    <string name="back">Geri</string>
+    <string name="information">Bilgiler</string>
+    <string name="about_app">Uygulama hakkında</string>
+    <string name="about_app_subtitle">Daha fazla bilgi edinin, geliştiriciyi tanıyın ve projeyi destekleyin</string>
+    <string name="about_app_description">İlaçlarınızı düzenlemenize ve planlanan saatlerde hatırlatıcı almanıza yardımcı olan basit bir uygulama.</string>
+    <string name="app_version">Sürüm %1$s</string>
+    <string name="developer_information">Geliştirici bilgileri</string>
+    <string name="developer_name">Ad</string>
+    <string name="developer_contact">İletişim</string>
+    <string name="not_configured">Yapılandırılmadı</string>
+    <string name="support_project">Bu projeyi destekleyin</string>
+    <string name="support_project_description">Uygulama sizin için yararlıysa geliştirme ve bakımına gönüllü olarak katkıda bulunabilirsiniz.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pix anahtarını kopyala</string>
+    <string name="pix_key_copied">Pix anahtarı kopyalandı</string>
+    <string name="amazon_wishlist">Amazon istek listesi</string>
+    <string name="open_link">Bağlantıyı aç</string>
+    <string name="other_support_methods">Diğer destek yolları</string>
+    <string name="donation_disclaimer">Katkılar isteğe bağlıdır ve uygulamanın çalışmasını veya özelliklere erişimi değiştirmez.</string>
 </resources>
 

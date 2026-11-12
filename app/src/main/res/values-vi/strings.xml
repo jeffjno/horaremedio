@@ -57,5 +57,24 @@
     <string name="delete">Xóa</string>
     <string name="delete_medication_title">Xóa thuốc?</string>
     <string name="delete_medication_message">Xóa vĩnh viễn “%1$s”? Hồ sơ, báo thức và ảnh sẽ bị xóa. Không thể hoàn tác thao tác này.</string>
+    <string name="back">Quay lại</string>
+    <string name="information">Thông tin</string>
+    <string name="about_app">Giới thiệu ứng dụng</string>
+    <string name="about_app_subtitle">Tìm hiểu thêm, biết về nhà phát triển và hỗ trợ dự án</string>
+    <string name="about_app_description">Ứng dụng đơn giản giúp bạn sắp xếp thuốc và nhận lời nhắc vào thời gian đã lên lịch.</string>
+    <string name="app_version">Phiên bản %1$s</string>
+    <string name="developer_information">Thông tin nhà phát triển</string>
+    <string name="developer_name">Tên</string>
+    <string name="developer_contact">Liên hệ</string>
+    <string name="not_configured">Chưa cấu hình</string>
+    <string name="support_project">Hỗ trợ dự án</string>
+    <string name="support_project_description">Nếu ứng dụng hữu ích, bạn có thể tự nguyện đóng góp cho việc phát triển và duy trì.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Sao chép khóa Pix</string>
+    <string name="pix_key_copied">Đã sao chép khóa Pix</string>
+    <string name="amazon_wishlist">Danh sách mong muốn Amazon</string>
+    <string name="open_link">Mở liên kết</string>
+    <string name="other_support_methods">Các cách hỗ trợ khác</string>
+    <string name="donation_disclaimer">Đóng góp là tùy chọn và không ảnh hưởng đến hoạt động hoặc quyền truy cập tính năng của ứng dụng.</string>
 </resources>
 

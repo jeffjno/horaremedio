@@ -6,6 +6,23 @@ Todas as mudanças relevantes devem ser registradas neste arquivo. Recomenda-se 
 
 ## [Não lançado]
 
+### Tela Sobre e apoio ao projeto — 2026-11-11
+
+#### Adicionado
+
+- Nova tela **Sobre o aplicativo**, acessível pela área de Configurações.
+- Descrição do aplicativo e exibição automática da versão instalada.
+- Espaços preparados para nome e contato do desenvolvedor.
+- Área de apoio voluntário preparada para chave Pix, lista de desejos da Amazon e um link adicional.
+- Ação para copiar a chave Pix e abertura externa dos links quando os valores forem configurados.
+- Arquivo central `AppProfile.kt` para preenchimento posterior das informações públicas.
+- Traduções completas da nova tela nos 20 idiomas suportados.
+
+#### Validado
+
+- Navegação, botão voltar, rolagem e estados não configurados verificados no emulador Android.
+- `assembleDebug`, `testDebugUnitTest` e `lintDebug` executados com sucesso.
+
 ### Gerenciamento e lembretes — 2026-11-11
 
 #### Adicionado

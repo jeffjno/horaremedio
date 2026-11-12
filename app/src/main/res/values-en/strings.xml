@@ -57,5 +57,24 @@
     <string name="delete">Delete</string>
     <string name="delete_medication_title">Delete medication?</string>
     <string name="delete_medication_message">Permanently delete “%1$s”? Its record, alarms, and photos will be erased. This action cannot be undone.</string>
+    <string name="back">Back</string>
+    <string name="information">Information</string>
+    <string name="about_app">About the app</string>
+    <string name="about_app_subtitle">Learn more, meet the developer, and support the project</string>
+    <string name="about_app_description">A simple app to help you organize your medications and receive reminders at scheduled times.</string>
+    <string name="app_version">Version %1$s</string>
+    <string name="developer_information">Developer information</string>
+    <string name="developer_name">Name</string>
+    <string name="developer_contact">Contact</string>
+    <string name="not_configured">Not configured</string>
+    <string name="support_project">Support this project</string>
+    <string name="support_project_description">If the app is useful to you, you can voluntarily contribute to its development and maintenance.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Copy Pix key</string>
+    <string name="pix_key_copied">Pix key copied</string>
+    <string name="amazon_wishlist">Amazon wish list</string>
+    <string name="open_link">Open link</string>
+    <string name="other_support_methods">Other ways to support</string>
+    <string name="donation_disclaimer">Contributions are optional and do not change how the app works or access to its features.</string>
 </resources>
 

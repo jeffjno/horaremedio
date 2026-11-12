@@ -57,5 +57,24 @@
     <string name="delete">ลบ</string>
     <string name="delete_medication_title">ลบยาหรือไม่?</string>
     <string name="delete_medication_message">ลบ “%1$s” อย่างถาวรหรือไม่? ข้อมูล การเตือน และรูปภาพจะถูกลบ และไม่สามารถย้อนกลับได้</string>
+    <string name="back">กลับ</string>
+    <string name="information">ข้อมูล</string>
+    <string name="about_app">เกี่ยวกับแอป</string>
+    <string name="about_app_subtitle">เรียนรู้เพิ่มเติม รู้จักผู้พัฒนา และสนับสนุนโครงการ</string>
+    <string name="about_app_description">แอปเรียบง่ายที่ช่วยจัดการยาและรับการแจ้งเตือนตามเวลาที่กำหนด</string>
+    <string name="app_version">เวอร์ชัน %1$s</string>
+    <string name="developer_information">ข้อมูลผู้พัฒนา</string>
+    <string name="developer_name">ชื่อ</string>
+    <string name="developer_contact">ติดต่อ</string>
+    <string name="not_configured">ยังไม่ได้ตั้งค่า</string>
+    <string name="support_project">สนับสนุนโครงการนี้</string>
+    <string name="support_project_description">หากแอปมีประโยชน์ คุณสามารถร่วมสนับสนุนการพัฒนาและดูแลรักษาได้ตามความสมัครใจ</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">คัดลอกคีย์ Pix</string>
+    <string name="pix_key_copied">คัดลอกคีย์ Pix แล้ว</string>
+    <string name="amazon_wishlist">รายการสิ่งที่อยากได้ใน Amazon</string>
+    <string name="open_link">เปิดลิงก์</string>
+    <string name="other_support_methods">วิธีสนับสนุนอื่น ๆ</string>
+    <string name="donation_disclaimer">การสนับสนุนเป็นทางเลือกและไม่ส่งผลต่อการทำงานหรือการเข้าถึงฟีเจอร์ของแอป</string>
 </resources>
 

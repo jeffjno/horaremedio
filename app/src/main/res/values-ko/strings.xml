@@ -57,5 +57,24 @@
     <string name="delete">삭제</string>
     <string name="delete_medication_title">약을 삭제할까요?</string>
     <string name="delete_medication_message">“%1$s”을(를) 완전히 삭제할까요? 기록, 알람, 사진이 삭제되며 되돌릴 수 없습니다.</string>
+    <string name="back">뒤로</string>
+    <string name="information">정보</string>
+    <string name="about_app">앱 정보</string>
+    <string name="about_app_subtitle">자세히 알아보고 개발자와 프로젝트 후원 방법을 확인하세요</string>
+    <string name="about_app_description">약을 정리하고 예정된 시간에 알림을 받을 수 있도록 돕는 간단한 앱입니다.</string>
+    <string name="app_version">버전 %1$s</string>
+    <string name="developer_information">개발자 정보</string>
+    <string name="developer_name">이름</string>
+    <string name="developer_contact">연락처</string>
+    <string name="not_configured">설정되지 않음</string>
+    <string name="support_project">프로젝트 후원</string>
+    <string name="support_project_description">앱이 유용하다면 개발과 유지 관리에 자발적으로 기여할 수 있습니다.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Pix 키 복사</string>
+    <string name="pix_key_copied">Pix 키가 복사되었습니다</string>
+    <string name="amazon_wishlist">Amazon 위시리스트</string>
+    <string name="open_link">링크 열기</string>
+    <string name="other_support_methods">기타 후원 방법</string>
+    <string name="donation_disclaimer">후원은 선택 사항이며 앱의 작동이나 기능 이용에 영향을 주지 않습니다.</string>
 </resources>
 

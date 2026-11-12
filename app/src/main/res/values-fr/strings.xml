@@ -57,5 +57,24 @@
     <string name="delete">Supprimer</string>
     <string name="delete_medication_title">Supprimer le médicament ?</string>
     <string name="delete_medication_message">Supprimer définitivement « %1$s » ? La fiche, les alarmes et les photos seront effacées. Cette action est irréversible.</string>
+    <string name="back">Retour</string>
+    <string name="information">Informations</string>
+    <string name="about_app">À propos de l’application</string>
+    <string name="about_app_subtitle">En savoir plus, découvrir le développeur et soutenir le projet</string>
+    <string name="about_app_description">Une application simple pour organiser vos médicaments et recevoir des rappels aux heures prévues.</string>
+    <string name="app_version">Version %1$s</string>
+    <string name="developer_information">Informations sur le développeur</string>
+    <string name="developer_name">Nom</string>
+    <string name="developer_contact">Contact</string>
+    <string name="not_configured">Non configuré</string>
+    <string name="support_project">Soutenir ce projet</string>
+    <string name="support_project_description">Si l’application vous est utile, vous pouvez contribuer volontairement à son développement et à sa maintenance.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">Copier la clé Pix</string>
+    <string name="pix_key_copied">Clé Pix copiée</string>
+    <string name="amazon_wishlist">Liste de souhaits Amazon</string>
+    <string name="open_link">Ouvrir le lien</string>
+    <string name="other_support_methods">Autres moyens de soutien</string>
+    <string name="donation_disclaimer">Les contributions sont facultatives et ne modifient ni le fonctionnement ni l’accès aux fonctionnalités de l’application.</string>
 </resources>
 

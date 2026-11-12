@@ -57,5 +57,24 @@
     <string name="delete">حذف</string>
     <string name="delete_medication_title">حذف الدواء؟</string>
     <string name="delete_medication_message">هل تريد حذف “%1$s” نهائيًا؟ سيتم حذف السجل والتنبيهات والصور. لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="back">رجوع</string>
+    <string name="information">معلومات</string>
+    <string name="about_app">حول التطبيق</string>
+    <string name="about_app_subtitle">تعرّف على المزيد وعلى المطوّر وادعم المشروع</string>
+    <string name="about_app_description">تطبيق بسيط يساعدك على تنظيم أدويتك وتلقي تذكيرات في المواعيد المحددة.</string>
+    <string name="app_version">الإصدار %1$s</string>
+    <string name="developer_information">معلومات المطوّر</string>
+    <string name="developer_name">الاسم</string>
+    <string name="developer_contact">التواصل</string>
+    <string name="not_configured">غير مُعدّ</string>
+    <string name="support_project">ادعم هذا المشروع</string>
+    <string name="support_project_description">إذا كان التطبيق مفيدًا لك، يمكنك المساهمة طوعًا في تطويره وصيانته.</string>
+    <string name="pix">Pix</string>
+    <string name="copy_pix_key">نسخ مفتاح Pix</string>
+    <string name="pix_key_copied">تم نسخ مفتاح Pix</string>
+    <string name="amazon_wishlist">قائمة أمنيات Amazon</string>
+    <string name="open_link">فتح الرابط</string>
+    <string name="other_support_methods">طرق دعم أخرى</string>
+    <string name="donation_disclaimer">المساهمات اختيارية ولا تغيّر طريقة عمل التطبيق أو الوصول إلى ميزاته.</string>
 </resources>
 
